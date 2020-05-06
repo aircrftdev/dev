@@ -1,0 +1,400 @@
+<html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: "Lato";
+            font-style: normal;
+            src: url('https://webfonts.zohostatic.com/latoregular/font.eot');
+            src: url('https://webfonts.zohostatic.com/latoregular/font.eot?#iefix') format('embedded-opentype'),
+                url('https://webfonts.zohostatic.com/latoregular/font.svg#LatoRegular') format('svg'),
+                url('https://webfonts.zohostatic.com/latoregular/font.woff') format('woff'),
+                url('https://webfonts.zohostatic.com/latoregular/font.ttf') format('truetype');
+        }
+
+        body {
+            background: #524b45;
+            margin: 0px;
+        }
+
+        a.link {
+            color: #000000;
+            text-decoration: none;
+            font-family: Lato;
+        }
+
+        a.link:hover {
+            background-color: #555555;
+            color: #FFFFFF;
+            text-shadow: none;
+        }
+
+        .zcloginBox {
+            background: rgba(255, 255, 255, 0.99);
+            width: 700px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .signupbox {
+            color: #cac9c9;
+            padding-top: 10px;
+            padding-left: 10px;
+            font-family: Lato;
+            padding-bottom: 10px;
+        }
+
+        .f14 {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .colorBlack {
+            color: #888;
+        }
+
+        .fgtboxtxt {
+            color: #999;
+            font-size: 12px;
+            line-height: normal;
+            margin: 5px;
+        }
+
+        .fgtbox,
+        .fgtbox a {
+            color: #cacaca;
+            text-align: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            font-family: Lato;
+        }
+
+        .signinrhs {
+            border-left: 1px solid #F5F5F5;
+            float: left;
+            font-family: Lato;
+            height: 210px;
+            margin: 50px 0 0 30px;
+            padding-left: 20px;
+            width: 250px;
+        }
+
+        .sgLabel {
+            color: #666666;
+        }
+
+        .sgLabelMand,
+        .sgLabel {
+            font: 14px Arial, Helvetica, sans-serif;
+            margin-bottom: 3px;
+            margin-top: 15px;
+            float: left;
+        }
+
+        .signUpInput {
+            border: 1px solid #D6D6D6;
+            border-radius: 3px 3px 3px 3px !important;
+            color: #333333;
+            font: 14px Arial, Helvetica, sans-serif;
+            padding: 5px;
+            width: 270px;
+        }
+
+        .errormsg {
+            color: #DD4B39;
+            display: block;
+            line-height: 17px;
+            margin: 0.5em 0 0;
+        }
+
+        .mt15 {
+            margin-top: 15px;
+        }
+
+        .mb5,
+        mB5 {
+            margin-bottom: 5px;
+        }
+
+        .mb5 {
+            margin-bottom: 5px;
+        }
+
+        .mt5 {
+            margin-top: 5px;
+        }
+
+        .txtfieldnew,
+        .txtfield,
+        .txtFieldnew {
+            border-color: #CBD3E2 #E2E9EF #E2E9EF;
+            border-style: solid;
+            border-width: 1px;
+            color: #262626;
+            font-size: 12px;
+            height: 19px;
+            padding-left: 5px;
+        }
+
+        .ngaddnewbtn {
+            color: #111;
+            background: #F6F6F6;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc),
+                to(#e0e0e0));
+            background: -moz-linear-gradient(top, #fcfcfc, #e0e0e0);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',
+                endColorstr='#e0e0e0');
+            white-space: nowrap;
+            text-align: left;
+            text-shadow: 0px 1px 0 #fff;
+            cursor: pointer;
+            font: normal 11px/15px Tahoma, Arial, Helvetica, sans-serif;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            border-radius: 3px;
+            margin-top: 5px !important;
+            border-color: #CCC #CCC #A0A0A0 #BBB;
+            border-style: solid;
+            border-width: 1px;
+            padding: 4px 12px;
+        }
+
+        .logocont {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: top;
+            font-size: 21px;
+            color: #fff;
+            line-height: 20px;
+            padding: 12px 0;
+            font-family: Lato;
+            text-decoration: none;
+        }
+
+        .succestxt {
+            color: #666666;
+            font: 13px/20px Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .confirmPwdHead {
+            font-family: Lato;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 24px;
+        }
+
+        .forgotPwdPage {
+            padding: 10px;
+        }
+
+        .portalSigninInfo {
+            padding: 20px;
+            font-size: 1.9em;
+            font-weight: bolder;
+            text-align: center;
+            font-family: Lato;
+            color: #414344;
+            position: relative;
+        }
+
+        .headerbannerbg {
+            background-color: #524b45 !important;
+            background-image: url('https://zcmss.zohocorp.com/sites/default/files/connect-bg.jpg');
+            background-repeat: no-repeat !important;
+            background-attachment: scroll !important;
+            background-position: left top !important;
+            background-size: cover !important;
+            -webkit-background-size: cover !important;
+            -moz-background-size: cover !important;
+            -o-background-size: cover !important;
+            height: 100%;
+            position: fixed;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        .topBand {
+            border-bottom: 1px solid rgba(255, 247, 247, 0.23);
+            padding: 10px
+        }
+
+        .poweredby {
+            color: #acacac;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: normal;
+            cursor: default;
+            text-align: right;
+            padding: 5px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .signupbox a {
+            color: #888;
+        }
+
+        .portalSigninInfoDesc {
+            font-family: Lato;
+            color: #a5a3a3;
+            font-size: 20px;
+        }
+
+        .portalLogo {
+            padding-top: 10px;
+            left: 20px;
+            width: 150px;
+            margin: 20px auto;
+        }
+
+        .clientEmail {
+            width: 80%;
+            margin: 10px auto 0;
+        }
+
+        .clientId {
+            max-width: 400px;
+            padding: 15px 15px 7px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .clientId input {
+            width: 100%;
+            font-size: 14px;
+            padding: 13px;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #e5e5e5;
+            background: #dbd8d6;
+        }
+    </style>
+    <script type="text/javascript">function getNewCaptcha() {
+            var url = "/generateCaptcha.ac";  //No I18N
+            var param = "";//No I18N
+            $.ajax({
+                url: url, data: param, cache: false, type: "POST", success: function (str) {//No I18N
+                    setValues(str);
+                }
+            });
+        }
+        function setValues(str) {
+            var values = str.split("|");
+            $("input[id=cdigest]").val(values[0]);
+            $("#captchaImage").attr("src", values[1]); //No I18N
+        }
+        function submitSignUpForm() {
+            var url = "/portalSignUp.ac"; //No I18N
+            var name = jQuery.trim($("#Name").val());//No I18N
+            var email = jQuery.trim($("#Email").val());//No I18N
+            var imageText = jQuery.trim($("#imageText").val());//No I18N
+            $("#nameErr").hide();//No I18N
+            $("#emailErr").hide();//No I18N
+            $("#captchaErr").hide();//No I18N
+            if (name == "") {
+                $("#nameErr").attr("style", "display:block"); //NO I18N
+                $("#nameErr").html("Name cannot be empty"); //NO I18N
+                $("#Name").focus(); //No I18N
+                return false;
+            } else if (name.length > 50) {
+                $("#nameErr").attr("style", "display:block"); //NO I18N
+                $("#nameErr").html("Name must be less than 50 characters"); //NO I18N
+                $("#Name").focus(); //No I18N
+                return false;
+            }
+            if (email == "") {
+                $("#emailErr").attr("style", "display:block"); //NO I18N
+                $("#emailErr").html("Email cannot be empty"); //NO I18N
+                $("#Email").focus(); //No I18N
+                return false;
+            }
+            if (email.length > 50) {
+                $("#emailErr").attr("style", "display:block"); //NO I18N
+                $("#emailErr").html("Email must be less than 50 characters"); //NO I18N
+                $("#Email").focus(); //No I18N
+                return false;
+            }
+            var pattern = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,15}$/i;
+            if (!pattern.test(email)) {
+                $("#emailErr").attr("style", "display:block"); //NO I18N
+                $("#emailErr").html("Please enter the valid email address"); //NO I18N
+                $("#Email").val("").focus(); //No I18N
+                return false;
+            }
+            if (imageText == "") {
+                $("#captchaErr").attr("style", "display:block");//NO I18N
+                $("#captchaErr").html("Please enter the text you see in the below image");//NO I18N
+                $("#imageText").val("").focus();//No I18N
+                return false;
+            }
+            var params = "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&cdigest=" + encodeURIComponent($("input[id=cdigest]").val()) + "&imageText=" + encodeURIComponent(imageText); //NO I18N
+            var portalLinkName = $("input[id=portalName]").val(); //No I18N
+            if (portalLinkName.trim() != "") {
+                params = params + "&portal=" + portalLinkName; //No I18N
+            }
+            $.ajax({
+                url: url, cache: false, type: "POST", data: params, success: function (result) //NO I18N
+                {
+                    if (result.indexOf("CaptchaErrorCaught") != -1) {
+                        $("#captchaErr").attr("style", "display:block"); //NO I18N
+                        $("#captchaErr").html(
+                            result.replace("#CaptchaErrorCaught#", "")); //NO I18N
+                        getNewCaptcha();
+                        return false;
+                    } else if (result.indexOf("#EmailAlreadyExists#") != -1) {
+                        $("#emailErr").attr("style", "display:block"); //NO I18N
+                        $("#emailErr").html(result.replace("#EmailAlreadyExists#", "")); //NO I18N
+                        return false;
+                    } else if (result.indexOf("#CommonErrorOccred#") != -1) {
+                        $("#show_message_container").attr("class", "errmsg"); //NO I18N
+                        $("#show_success_message").html(result.replace("#CommonErrorOccred#", "")); //No I18N
+                        $("#show_message_container").fadeIn('slow'); //No I18N
+                        getNewCaptcha();
+                        return false;
+                    } else if (result.indexOf("#SignedUpSuccessfully#") != -1) {
+                        $("#succEmailId").html("<a href=\"mailto:" + $("#Email").val() + "\">" + $("#Email").val() + "</a>"); //NO I18N
+                        $("#signupPage").hide();//No I18N
+                        $("#successMsg").show();//No I18N
+                        $("#Name").val("");//No I18N
+                        $("#Email").val("");//No I18N
+                        $("input[id=imageText]").val("");//No I18N
+                        getNewCaptcha();
+                        return true;
+                    }
+                }
+            });
+            return false;
+        }</script>
+    <title>
+        AIRCRFT
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <link rel="SHORTCUT ICON" href="/customFavicon.ac?scopeId=346680000000002002&amp;timestamp=711031000000014001">
+
+</head>
+
+<body>
+    <div class="headerbannerbg" style="background-image:url(//zcmss.zohocorp.com/sites/default/files/connect-bg.jpg)">
+        <div class="zcloginBox">
+            <div id="signinPage" class="signinPage"><img class="portalLogo"
+                    src="https://contacts.zoho.com/file?ID=699162561&amp;t=org&amp;time=1588713479394">
+                <div class="portalSigninInfo">Sign in to AIRCRFT</div><iframe height="260" width="80%" name="zohoiam"
+                    frameborder="0" scrolling="no" dcc="true"
+                    src="https://accounts.zohoportal.com/accounts/signin?_sh=false&amp;hideidp=false&amp;dcc=true&amp;portal=10019515525&amp;client_portal=true&amp;servicename=ZohoPulse&amp;serviceurl=https://connect.aircrft.com/client"></iframe>
+
+                <div class="signupbox"><span class="f14">Forgot Password?&nbsp;<a
+                            href="/getResetPassword.ac?portal=invite"
+                            onclick="ZIntranet.resetPasswordPopup()">Reset</a></span>
+                    <div class="fgtboxtxt">We'll send you an email with a link to reset your password.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
