@@ -147,6 +147,123 @@
       </div>
     </div>
 
+    <!-- Modal: Demo AIRCRFT Memberships POPOUT 5.6.2020 -->
+    <div class="modal fade fixed-right" id="modalDemo" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+        <form class="modal-content" id="demoForm">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <a class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </a>
+
+            <div class="text-center">
+              <img src="./assets/img/aircrft-logo-3.png" alt="..." class="img-fluid mb-3">
+            </div>
+
+            <h2 class="text-center mb-2">
+              Aircrft
+            </h2>
+
+            <p class="text-center mb-4">
+              Customize your inflight experience!
+            </p>
+
+            <hr class="mb-4">
+
+            <h4 class="mb-1">
+              Color Control Panel
+            </h4>
+
+            <p class="small text-muted mb-3">
+              Adjust your overall light or dark experience.
+            </p>
+
+            <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
+              <label class="btn btn-white active col">
+                <input type="radio" name="colorScheme" id="colorSchemeLight" value="light" checked> <i
+                  class="fe fe-sun mr-2"></i> Light Mode
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="colorScheme" id="colorSchemeDark" value="dark"> <i class="fe fe-moon mr-2"></i>
+                Dark Mode
+              </label>
+            </div>
+
+            <h4 class="mb-1">
+              Navigation Position
+            </h4>
+
+            <p class="small text-muted mb-3">
+              Select the primary navigation paradigm for your flight.
+            </p>
+
+            <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
+              <label class="btn btn-white active col">
+                <input type="radio" name="navPosition" id="navPositionSidenav" value="sidenav" checked> Sidenav
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navPosition" id="navPositionTopnav" value="topnav"> Topnav
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navPosition" id="navPositionCombo" value="combo"> Combo
+              </label>
+            </div>
+
+            <div class="collapse show" id="sidebarSizeContainer">
+
+              <h4 class="mb-1">
+                Sidenav Sizing <span class="badge badge-soft-primary">New</span>
+              </h4>
+
+              <p class="small text-muted mb-3">
+                Standard navigation sizing or minified icons with dropdowns.
+              </p>
+
+              <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
+                <label class="btn btn-white active col">
+                  <input type="radio" name="sidebarSize" id="sidebarSizeBase" value="base" checked> Fullsize
+                </label>
+                <label class="btn btn-white col ml-2">
+                  <input type="radio" name="sidebarSize" id="sidebarSizeSmall" value="small"> Icons
+                </label>
+              </div>
+
+            </div>
+
+            <h4 class="mb-1">
+              Navigation Color <span class="badge badge-soft-primary">New</span>
+            </h4>
+
+            <p class="small text-muted mb-3">
+              Usually dictated by the color experience, but can be overriden.
+            </p>
+
+            <div class="btn-group-toggle d-flex" data-toggle="buttons">
+              <label class="btn btn-white active col">
+                <input type="radio" name="navColor" id="navColorDefault" value="default" checked> Default
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navColor" id="navColorInverted" value="inverted"> Inverted
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navColor" id="navColorVibrant" value="vibrant"> Magic
+              </label>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+
+            <button type="submit" class="btn btn-block btn-primary mt-auto">
+              Deploy Customization
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>}
+
     <!-- Modal: Members -->
     <div class="modal fade" id="modalMembers" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -5914,23 +6031,22 @@
 
         <!-- HEADER -->
         <div class="pt-7 pb-8 bg-dark bg-ellipses">
-            <div
-                class="container-fluid">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-6">
 
                         <!-- Title -->
                         <h1 class="display-3 text-center text-white">
-                            AIRCRFT All-access pass  
+                            All-access pass  
                         </h1>
 
                         <!-- Text -->
                         <p class="lead text-center text-muted">
-                            Aircrft is a Virtual startup co-working space with on a global private startup network.
+                            Join the fastest growing global private startup network and vitual co-working space.
                         </p>
 
                         <p class="text-center text-muted">
-                            The future of deep work is happening on AIRCRFT.
+                            Welcome to the future of deep.
                         </p>
 
                     </div>
@@ -5938,85 +6054,11 @@
             </div>
         </div>
 
-        <!-- FOUNDERS  Pricing Card 1-->
-        <div
-            class="container-fluid">
-            <div class="row mt-n7">
-                <div class="col-12 col-lg-4">
+        <!-- AIRCRFT All-Access Boarding Pass -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-body">
-
-                            <!-- Title 
-                            <h6 class="text-uppercase text-center text-muted my-4">
-                                Founders
-                            </h6> -->
-
-                            <!-- Price 
-                            <div class="row no-gutters align-items-center justify-content-center">
-                                <div class="col-auto">
-                                    <div class="h2 mb-0">$</div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="display-2 mb-0">19</div>
-                                </div> -->
-                            </div> <!-- / .row --> 
-
-                            <!-- Period 
-                            <div class="h6 text-uppercase text-center text-muted mb-5">
-                                / month
-                            </div> -->
-
-                            <!-- Features 
-                            <div class="mb-3">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Personalized activity feeds for founders</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Direct messaging - voice, text, video</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Video conference - remote teams optimized</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Organized conversations in teams and channels</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Real-time collaboration on all your devices</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Post jobs - conduct remote live video interviews</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Manuals, articles, and blog posts</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Groups - bring your network together</small> <small></small>
-                                    </li>
-                                </ul>
-                            </div> -->
-
-                            <!-- Button 
-                            <a href="#!" class="btn btn-block btn-light">
-                                Start with Founders
-                            </a> -->
-
-                        </div>
-                    </div> 
-
-                </div>
-                <div class="col-12 col-lg-4">
-
-                    <!-- AIRCRFT All-Access Boarding Pass -->
                     <div class="card">
                         <div class="card-body">
 
@@ -6074,81 +6116,14 @@
 
                             <!-- Button -->
                             <a href="#!" class="btn btn-block btn-primary">
-                                Startup Teams
+                                All-access pass
                             </a>
 
                         </div>
                     </div>
 
                 </div>
-                <div class="col-12 col-lg-4">
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h6 class="text-uppercase text-center text-muted my-4">
-                                Enterprise
-                            </h6>
-
-                            <!-- Price -->
-                            <div class="row no-gutters align-items-center justify-content-center">
-                                <div class="col-auto">
-                                    <div class="h2 mb-0">$</div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="display-2 mb-0">99</div>
-                                </div>
-                            </div> <!-- / .row -->
-
-                            <!-- Period -->
-                            <div class="h6 text-uppercase text-center text-muted mb-5">
-                                / month
-                            </div>
-
-                            <!-- Features -->
-                            <div class="mb-3">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Unlimited team members and activity</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Developer API's</small> <i class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Admin level access - full control over your data</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Professional content publishing platform</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Embed company activity feeds on site and apps</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Key metrics dashboard</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-between px-0">
-                                        <small>Custom desktop, email, and mobile notifications</small> <i
-                                            class="fe fe-check-circle text-success"></i>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Button -->
-                            <a href="#!" class="btn btn-block btn-light">
-                                Enterprise
-                            </a>
-
-                        </div>
-                    </div>
-
-                </div>
             </div> <!-- / .row -->
             <div class="row">
                 <div class="col-12 col-md-6">
